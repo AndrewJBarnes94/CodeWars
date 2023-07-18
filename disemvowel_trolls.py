@@ -11,6 +11,15 @@ Note: for this kata y isn't considered a vowel.
 
 """
 
+# Best Practices
+def disemvowel(string):
+    return "".join(c for c in string if c.lower() not in "aeiou")
+
+def disemvowel(s):
+    for i in "aeiouAEIOU":
+        s = s.replace(i,'')
+    return s
+
 # Me
 def disemvowel(string_):
     vowels = ['a', 'e', 'i', 'o', 'u']
